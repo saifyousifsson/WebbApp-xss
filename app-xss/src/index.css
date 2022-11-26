@@ -1,0 +1,233 @@
+:root{
+  --clr-bg: #e7ecf1;
+  --clr-primary:#6183c8;
+
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+body{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+  width: 600px;
+  margin: 25px auto;
+}
+.message-form,
+.message{
+  background-color: #fff;
+  border-radius: 1em;
+  padding: 1rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.511);
+
+}
+.input-group input,
+.input-group textarea,
+.input-group label {
+display: block;
+width: 100%;
+}
+.input-group{
+  margin-bottom: 1rem;
+}
+.input-group label{
+  font-weight: bold;
+  margin-bottom: .3rem;
+  font-size: 1rem;
+}
+.input-group textarea,
+.input-group input {
+  border-radius: .4em;
+  border: 1px solid #999;
+  padding: .4rem;
+  font-size: 1rem;
+}
+.input-group textarea{
+  resize: vertical;
+}
+.input-group textarea:focus,
+.input-group input:focus{
+  outline: none;
+  box-shadow: 0 0 4px var(--clr-primary);
+}
+.error-message{
+  margin-bottom: 1rem;
+  color: firebrick;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.btn{
+  padding: .7em 2.5em;
+  font-weight: bold;
+  background-color: var(--clr-primary);
+  color: #fff;
+  border: 0;
+  border-radius: .4em;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.sub-title{
+  text-align: center;
+  margin-top: 2rem;
+}
+.message{
+  margin-top: 1rem; 
+  margin-bottom: 2rem;
+}
+.img-container{
+  width: 30%;
+}
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.message-header{
+  display: flex;
+}
+.message-header h2{
+  text-align: center;
+  flex: 1;
+  align-self: center;
+}
+.message-body{
+  border-top: 1px solid #cccfd2;
+  padding-top: 1rem;
+  margin-top: 1rem;
+
+}
+.nav-container{
+  width: 80%;
+  margin: 0px auto;
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar{
+  background-color: var(--clr-primary);
+}
+.navbar-nav{
+  list-style: none;
+  gap: 2rem;
+}
+.nav-link{
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem;
+  display: inline-block;
+}
+.nav-link.active{
+  text-decoration: underline;
+}
+.nav-container:nth-child(1){
+  margin-left: -1;
+}
+.nav-link:hover{
+  background-color: rgba(74, 69, 69, 0.264);
+}
+.login-btn{
+  padding: .6em 3em;
+  border: 0;
+  border-radius: .5em;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  transition: backgrund(100ms);
+}
+.login-btn:hover{
+  background-color: #bfcae1;
+}
+.login-btn:active{
+  background-color: #c4d2ef;
+}
+.avatar-dropdown{
+ position: relative;
+}
+.avatar{
+  border-radius: 50%;
+  overflow: hidden;
+  height: 42px;
+  cursor: pointer;
+}
+.dropdown{
+  position: absolute;
+  width: 140px;
+  background-color: #fff;
+  padding: .5rem;
+  border-radius: .3rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.511);
+  right: 0;
+  bottom: -.5rem;
+  transform: translateY(100%);
+}
+.logout-btn{
+ width: 100%;
+ border: 0;
+ padding: .4rem;
+ border-radius: .5rem;
+ background-color:var(--clr-primary);
+ color: #fff;
+ text-transform: uppercase;
+ font-weight: 600;
+ cursor: pointer;
+ transition: backgrund(100ms);
+}
+.logout-btn:hover{
+  background-color: #92ace5;
+}
+.logout-btn:active{
+  background-color: #8597bd;
+}
+.Profile{
+  margin-top: 3rem;
+  background-color: #fff;
+}
+.card{
+  width: 100%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.511);
+ padding: 2rem;
+ border-radius: 1rem;
+}
+.img-container{
+  border-radius: 1rem;
+  overflow: hidden;
+  width: 20%;
+  aspect-ratio: 1;
+}
+.credentils{
+  flex: 1;
+  text-align: center;
+}
+.loader{
+ position: fixed;
+ background-color:#e7ecf1; 
+ inset: 0;
+ z-index: 1000;
+ display: grid;
+ place-items: center;
+}
+.spinner{
+  width: 75px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 10px solid transparent;
+  border-top-color: #92ace5;
+  border-bottom-color: #92ace5;
+  animation: spin 600ms infinite ease-in-out;
+}
+@keyframes spin {
+  from{rotate: 0;}
+  to{rotate: 360deg;}
+}
+#q-wrapper .ql-toolbar.ql-snow{
+  background-color: rgb(248,249,250);
+  border-radius: .4rem .4rem 0 0;
+}
+#q-wrapper .ql-container.ql-snow{
+  border-radius: 0 0 .4rem .4rem ;
+  height: 600px;
+}
